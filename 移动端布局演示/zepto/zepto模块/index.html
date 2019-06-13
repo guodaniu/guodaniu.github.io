@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width">
+	<script src="zepto.min.js"></script>
+	<script src="touch1.2.js"></script>
+	<style>
+		
+		#box{
+			width: 100px;
+			height: 100px;
+			background: red;
+			position: absolute;
+			top:0;
+		}
+	</style>
+</head>
+<body>
+	<button id="btn">按钮</button>
+	<div id="box"></div>
+</body>
+<script>
+	$("#btn").tap(function(){
+		console.log(1)
+	})
+	// $("#box").click(function(){
+	// 	$(this).hide()
+	// })
+	box.onclick=function(){
+		this.style.display="none"
+	}
+</script>
+</html>
