@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Document</title>
+	<script src="zepto.min.js"></script>
+	<script src="animate.js"></script>
+	<script src="touch1.2.js"></script>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+
+	<h1>长按测智商</h1>
+
+</body>
+<script>
+	
+	$("div").html("hello").css({
+		color:"red"
+	})
+
+
+	$("div").tap(function(){
+
+		$(this).animate({marginLeft:100},5000,"linear",function(){
+			console.log("动画结束")
+		},1000)
+
+	})
+
+	$("h1").longTap(function(){
+
+		alert("50")
+
+	})
+
+
+</script>
+</html>
